@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<meta name="keywords" content="xeonline,xe,oto,ô tô,xe đẹp,acura,daihatsu,datsun,honda,infiniti,isuzu,lexus,mazda,mitsubishi,mitsuoka,nissan,subaru,suzuki,toyota,Yamaha,Former" />
+	
+	<meta property="og:site_name" content="xeonline.vn" />
+	<meta property="og:rich_attachment" content="true" />
+	<meta property="article:publisher" content="#" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="xeonline.vn" />
+	<meta property="og:image" content="img/logo.png" />
+	<meta property="og:description" content="description"/>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<title>xeonline.vn</title>
+
+</head>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$.getJSON('getnews', function (data) {
+			for(i=0; i<data.length; i++){
+				id = "#c"+(i%3);
+				//console.log(id);
+				//$(id).append("<a href='"+data[i].link+"' target='_blank'><img class='card-img-top img-fluid' src='"+data[i].header+"' alt=''></a>");
+				$(id).append(	 "<div class='item'><a href='"	+ data[i].link + "' target='_blank'>"
+								+"<img class='card-img-top img-fluid' src='"+data[i].header+"' alt='img'>"
+								+"<div class='title'>"+data[i].title+"</div>"
+								+"</a></div>");
+			}
+		});
+	});
+</script>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="column" id="c0"></div>
+		<div class="column" id="c1"></div>
+		<div class="column" id="c2"></div>
+	</div>
+</div>
+</body>
+</html>
