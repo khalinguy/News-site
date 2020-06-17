@@ -161,7 +161,7 @@ public class Crawl {
 	public static void main(String[] args) throws Exception{
 		//Connection conn = Database.getConn("localhost", "3306", "xeonline", "root", "root");
 		Connection conn = Database.getConn("localhost", "3306", "car", "root", "root");
-		String[] keywords = {"news.zing.vn"};//"mercedes","chevrolet","mazda"};
+		String[] keywords = {"mercedes","chevrolet","mazda"};
 		for(String keyword : keywords) {
 			List<Info> is = getInfoList(keyword.toLowerCase());
 			for (Info i : is) {
