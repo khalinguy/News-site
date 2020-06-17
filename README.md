@@ -3,7 +3,12 @@ Comprehensive up-to-date news coverage, aggregated from different sources.
 
 # Library
 
-  JSoup
+⭐ JSoup<br/>
+⭐ MySQL<br/>
 
 
-Achieve APIs from Google News.
+API news achieved from Google News.
+
+# Demo Image
+
+
