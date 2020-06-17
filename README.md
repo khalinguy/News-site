@@ -1,5 +1,5 @@
 # News-site
-Comprehensive up-to-date news coverage, aggregated from different sources.
+Comprehensive up-to-date news, aggregated from different sources by search keyword.
 
 # Library
 
